@@ -1,0 +1,41 @@
+.account-page { padding-block: 150px 100px; }
+.account-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; margin-bottom: 65px; }
+.account-heading h1, .account-entry-summary h2 { font-size: clamp(48px, 6vw, 82px); line-height: 1.08; margin-top: 22px; overflow-wrap: anywhere; }
+.account-heading > button { margin-top: 10px; }
+.account-workspace, .account-entry { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(35px, 7vw, 110px); align-items: start; }
+.account-entry { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); min-height: 550px; align-items: center; }
+.account-intro { color: #bcb8ac; font-size: 23px; max-width: 410px; margin-top: 25px; }
+.account-entry-benefits { margin-top: 38px; }
+.account-entry-benefits p { padding-block: 13px; border-top: 1px solid #b8925230; font-size: 20px; }
+.account-entry-benefits span { display: inline-block; color: #c5a16a; font-size: 14px; width: 38px; }
+.account-login, .account-profile { border-top: 1px solid #b8925270; padding-top: 25px; }
+.account-login h1, .account-profile h2, .account-section-heading h2 { font-size: 35px; line-height: 1.15; margin-block: 18px; }
+.account-login > p:not(.eyebrow) { color: #bcb8ac; font-size: 19px; line-height: 1.6; }
+.yandex-login-button { display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%; min-height: 56px; background: #f2eee8; color: #171612; font-size: 21px; border-radius: 3px; margin-block: 28px 18px; transition: background 200ms, transform 250ms; }
+.yandex-login-button:hover { background: white; transform: translateY(-2px); }
+.yandex-login-button > span { display: grid; place-items: center; border-radius: 50%; width: 28px; height: 28px; color: white; background: #fc3f1d; font-family: Arial, sans-serif; font-size: 21px; }
+.yandex-login-button:disabled { opacity: .55; cursor: not-allowed; transform: none; }
+.account-login > .account-privacy { font-size: 15px !important; margin-block: 22px 28px; }
+.account-privacy a { text-decoration: underline; text-underline-offset: 3px; }
+.account-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; border-top: 1px solid #b8925270; padding-top: 8px; }
+.account-section-heading .text-link { font-size: 17px; white-space: nowrap; }
+.account-empty { padding-block: 45px; }
+.account-empty > span { color: #c5a16a; font-size: 21px; }
+.account-empty h3 { margin-block: 20px; font-size: 39px; line-height: 1.15; }
+.account-empty p { color: #bcb8ac; font-size: 20px; max-width: 430px; }
+.account-empty .book-button { margin-top: 28px; }
+.account-contact { display: inline-block; color: #d8b777; margin-block: 15px; }
+.account-profile .booking-block { margin-top: 25px; padding-bottom: 0; border: 0; }
+.account-profile input { margin-bottom: 20px; }
+.account-profile .book-button { width: 100%; margin-top: 8px; }
+.account-message { font-size: 18px; color: #e1c38d; line-height: 1.6; }
+.account-visit-list { list-style: none; margin: 28px 0 0; padding: 0; }
+.account-visit-list li { padding-block: 25px; border-top: 1px solid #b8925240; }
+.account-visit-list h3 { font-size: 32px; margin-block: 12px; }
+.account-visit-list h3 small { font-size: 15px; color: #bcb8ac; margin-left: 12px; }
+.account-visit-list .text-link { font-size: 17px; }
+.header-account { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; width: 44px; flex-shrink: 0; color: #d4be97; }
+@media(max-width: 1150px) and (min-width: 1024px) { .desktop-nav { gap: 20px; } }
+@media(max-width: 1023px) { .header-book { margin-left: auto; } }
+@media(max-width: 767px) { .account-workspace, .account-entry { grid-template-columns: minmax(0,1fr); gap: 45px; } .account-entry { min-height: auto; } .account-heading { margin-bottom: 38px; } }
+@media(max-width: 639px) { .account-page { padding-block: 110px 70px; } .account-heading h1, .account-entry-summary h2 { font-size: 47px; } .header-account { margin-left: auto; } .account-section-heading { flex-wrap: wrap; gap: 0; } .account-section-heading h2 { margin-bottom: 6px; } }
